@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+int inicio, fim;
+float fahrenheit, celsius;
+printf("Informe o inicio\n");
+scanf("%d", &inicio);
+printf("Informe o fim\n");
+scanf("%d", &fim);
+
+for (fahrenheit = inicio; fahrenheit < fim; fahrenheit++) {
+    celsius = 5 * (fahrenheit - 32) / 9.0;
+    printf("%.1f fahrenheit equivale a %.1f graus celsius\n", fahrenheit, celsius);
+}
+
+return 0;
+}
